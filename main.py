@@ -3,13 +3,7 @@ from selenium.webdriver.common.by import By
 from eth_account import Account
 import time,os,sqlite3,requests,urllib3
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-clientKey = "0860b19a814ed258fcce32d8bb7f74e8189f09a411656"
-websiteKey = "6Lc51cseAAAAAIevGQr6hosZ7uOE2GAjcRauTMds"
-websiteURL_web = "https://asia-south1-pbnative-403e0.cloudfunctions.net/register"
-websiteURL = "https://zelta.io/"
 
-task_type = "NoCaptchaTaskProxyless"
 
 def creat_db():
     pwd = os.getcwd()
@@ -107,6 +101,7 @@ def regist_selenium ():
         time.sleep(2)
 
 def regist_post ():
+    websiteURL_post = "https://asia-south1-pbnative-403e0.cloudfunctions.net/register"
     db_pwd = "./zelta.db"
     conn = sqlite3.connect(db_pwd)
     c = conn.cursor()
@@ -121,7 +116,7 @@ def regist_post ():
         print("当前钱包地址："+str(address))
         print("当前email："+str(google_email))
         data = {"data":{"email":google_email,"address": address}}
-        r = requests.post(websiteURL_web, json=data)
+        r = requests.post(websiteURL_post, json=data)
         print (r.text)
         count=count+1
         print("&&&&&&&&&&&&&")
@@ -131,4 +126,4 @@ if __name__ == '__main__':
     #creat_db()
     #creat_wallet(20)
     #regist_selenium()
-    regist_post()
+    #regist_post()

@@ -4,17 +4,12 @@ Zelta注册以进入候补名单并获得免费保证的 NFT。
 [zelta.io](url)
 # 0x02 环境准备
 
-`mac os ventura Pycharm 
-`
-
-`pip3 install web3
-`
-
-`pip3 install requests
-`
-
-`pip3 install selenium
-`
+```
+mac os ventura Pycharm 
+pip3 install web3
+pip3 install requests
+pip3 install selenium
+```
 
 # 0x03 目录结构
 
@@ -54,13 +49,13 @@ status -状态值 "ALREADY_EXISTS"和"User signed up successfully"
 PS:需要提前准备好chromedriver环境，可以自行google
 同时采用selenium的方式，点击频率过高，会出发google的验证码机制，所以可以通过更换vpn地址或者待会运行的方式
 
-## step2: 通过requests方式进行注册
+## step3: 通过requests方式进行注册
 
-1:需要取消`regist_post()`前面的注视，
+1:取消`regist_post()`前面的注视，
 
-2:`最后运行 python3 main.py`  
+2:运行 `python3 main.py`  
 
-3：运行结果会直接在终端输出，该方式运行速度快，且经测试不会出发google的验证码机制
+3:运行结果会直接在终端输出，该方式运行速度快，且经测试不会触发google的验证码机制
 
 
 

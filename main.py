@@ -3,13 +3,7 @@ from selenium.webdriver.common.by import By
 from eth_account import Account
 import time,os,sqlite3,requests,urllib3
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-clientKey = "0860b19a814ed258fcce32d8bb7f74e8189f09a411656"
-websiteKey = "6Lc51cseAAAAAIevGQr6hosZ7uOE2GAjcRauTMds"
-websiteURL_web = "https://asia-south1-pbnative-403e0.cloudfunctions.net/register"
-websiteURL = "https://zelta.io/"
 
-task_type = "NoCaptchaTaskProxyless"
 
 def creat_db():
     pwd = os.getcwd()
@@ -57,7 +51,7 @@ def regist_selenium ():
     db_pwd = pwd + "/zelta.db"
     conn = sqlite3.connect(db_pwd)
     c = conn.cursor()
-    c.execute('SELECT * FROM zelta;')
+    c.execute('SELECT * from zelta where Gmail LIKE "%@%"')
     rows = c.fetchall()
     count=1
     WEB_DRIVER_PATH = pwd + "/tool/chromedriver"
@@ -66,7 +60,7 @@ def regist_selenium ():
     driver = webdriver.Chrome(executable_path=WEB_DRIVER_PATH, options=opt)
     driver.get("https://zelta.io/")
     time.sleep(1)
-    for i in rows[0:40]:
+    for i in rows:
         google_email=i[4]
         secret_key = i[3].split(" ")
         address=i[1]
@@ -107,22 +101,30 @@ def regist_selenium ():
         time.sleep(2)
 
 def regist_post ():
+    websiteURL_post = "https://asia-south1-pbnative-403e0.cloudfunctions.net/register"
     db_pwd = "./zelta.db"
     conn = sqlite3.connect(db_pwd)
     c = conn.cursor()
-    c.execute('SELECT * FROM zelta;')
+    c.execute('SELECT * from zelta where Gmail LIKE "%@%"')
     rows = c.fetchall()
     count=1
     time.sleep(1)
-    for i in rows[1:40]:
+    for i in rows:
         google_email=i[4]
-        address=i[2]
+        address=i[1]
         print("当前循环数量 "+str(count))
         print("当前钱包地址："+str(address))
         print("当前email："+str(google_email))
         data = {"data":{"email":google_email,"address": address}}
-        r = requests.post(websiteURL_web, json=data)
-        print (r.text)
+        r = requests.post(websiteURL_post, json=data)
+        if "ALREADY_EXISTS" in r.text:
+            c.execute("update zelta set status ='ALREADY_EXISTS' where address='%s';" % (address))
+            conn.commit()
+            print("ALREADY_EXISTS")
+        elif "User signed up successfully" in r.text:
+            c.execute("update zelta set status ='User signed up successfully' where address='%s';" % (address))
+            conn.commit()
+            print ("User signed up successfully")
         count=count+1
         print("&&&&&&&&&&&&&")
         time.sleep(2)

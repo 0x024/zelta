@@ -110,7 +110,7 @@ def regist_post ():
     db_pwd = "./zelta.db"
     conn = sqlite3.connect(db_pwd)
     c = conn.cursor()
-    c.execute('SELECT * FROM zelta where;')
+    c.execute('SELECT * FROM zelta;')
     rows = c.fetchall()
     count=1
     time.sleep(1)
@@ -121,7 +121,7 @@ def regist_post ():
         print("当前钱包地址："+str(address))
         print("当前email："+str(google_email))
         data = {"data":{"email":google_email,"address": address}}
-        r = requests.post(websiteURL, json=data)
+        r = requests.post(websiteURL_web, json=data)
         print (r.text)
         count=count+1
         print("&&&&&&&&&&&&&")

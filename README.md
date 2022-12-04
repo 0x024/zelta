@@ -26,11 +26,11 @@ zelta.db----存放钱包地址及邮箱地址
 
 ## step1: 创建钱包，
 
-1:需要取消`creat_wallet()`前面的注视，
+1:取消`creat_wallet()`前面的注视，
 
-2:需要在creat_db传入钱包数量，例如要创建1000个钱包及`creat_wallet(1000)`
+2:在creat_db传入钱包数量，例如要创建1000个钱包及`creat_wallet(1000)`
 
-3:`最后运行 python3 main.py`
+3:最后运行 `python3 main.py`
 
 4:运行过程中会直接写入到sqlite数据库中
 
@@ -40,14 +40,14 @@ address -钱包地址
 private_key -钱包密钥
 phrases -钱包助记词
 Gmail -邮箱，需要写入自己的邮箱
-status -状态值
+status -状态值 "ALREADY_EXISTS"和"User signed up successfully"
 ```
 
 ## step2: 通过selenium方式进行注册
 
-1:需要取消`regist_selenium()`前面的注视，
+1:取消`regist_selenium()`前面的注视，
 
-2:`最后运行 python3 main.py`  
+2:运行 `python3 main.py`  
  
 3:运行过程中，会调用起来chrome，然后自动点击注册，自动填写邮箱地址，自动填写钱包地址，自动提交，且注册的结果，会直接写入到数据库中,status=1代表注册成功
 

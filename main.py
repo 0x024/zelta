@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from eth_account import Account
-import time,os,sqlite3,requests,urllib3
+import time,os,sqlite3,requests
 
 
 
@@ -89,11 +89,13 @@ def regist_selenium ():
             try:
                 time.sleep(1)
                 driver.find_element(By.XPATH, '//*[@id="chakra-modal--header-2"]/button').click()
-                c.execute("update zelta set status ='1' where address='%s';" % (address))
+                c.execute("update zelta set status ='User signed up successfully' where address='%s';" % (address))
                 conn.commit()
-                print("registration success")
+                print("User signed up successfully")
             except:
-                print("address alerady exist")
+                c.execute("update zelta set status ='ALREADY_EXISTS' where address='%s';" % (address))
+                conn.commit()
+                print("aALREADY_EXISTS")
 
 
         count=count+1

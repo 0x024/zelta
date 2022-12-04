@@ -131,4 +131,4 @@ if __name__ == '__main__':
     #creat_db()
     #creat_wallet(20)
     #regist_selenium()
-    regist_post()
+    #regist_post()

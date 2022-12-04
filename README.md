@@ -27,8 +27,8 @@ mac os ventura Pycharm
 pip3 install web3
 pip3 install requests
 pip3 install selenium
+git clone git@github.com:0x024/zelta.git
 ```
-
 ## 0x03 目录结构
 
 ```

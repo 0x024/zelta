@@ -50,6 +50,7 @@
       <workItem from="1670130480444" duration="26000" />
       <workItem from="1670130528136" duration="8000" />
       <workItem from="1670130545873" duration="159000" />
+      <workItem from="1670130710300" duration="256000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1670127249285</created>
@@ -100,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670128424975</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit">
+      <created>1670130801981</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670130801981</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit">
+      <created>1670130908946</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670130908946</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,19 +126,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>

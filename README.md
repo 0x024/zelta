@@ -6,14 +6,13 @@ website:0x024.com
 
 twitter:_0x024
 
-mirror: mirr0r.xyz/1x024.eth
+mirror: https://mirror.xyz/1x024.eth/
 
 如果喜欢我，那就donation我 你的支持将给予我无限分享下去的动力
 ```
 
 ```
 0x14bCa363445462082101164Eff599F83fbBEbab1 
-https://mirror.xyz/1x024.eth/v-s6ZljeHqFZOo8Cem-juytVN-I9JWG7bkScS7Lev6U
 ```
 
 

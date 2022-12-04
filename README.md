@@ -13,6 +13,7 @@ mirror: mirr0r.xyz/1x024.eth
 
 ```
 0x14bCa363445462082101164Eff599F83fbBEbab1 
+https://mirror.xyz/1x024.eth/v-s6ZljeHqFZOo8Cem-juytVN-I9JWG7bkScS7Lev6U
 ```
 
 
@@ -23,6 +24,7 @@ Zelta NFT免费领取 填写邮箱和马蹄链钱包地址不用gas费（Polygon
 ## 0x02 环境准备
 
 ```
+
 mac os ventura Pycharm 
 pip3 install web3
 pip3 install requests

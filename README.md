@@ -8,7 +8,7 @@ twitter:_0x024
 
 mirror: mirr0r.xyz/1x024.eth
 
-如果喜欢我，那就donation我 你的支持是让我能够分享下去的动力
+如果喜欢我，那就donation我 你的支持将给予我无限分享下去的动力
 ```
 
 ```

@@ -1,19 +1,29 @@
-# 🐳 Web3 科普
-```
-专注web3科学爱好者
 
-website:0x024.com
+<h1 align="center">&#x1f912; web3的兼职者&#x1f973;</h1>
 
-twitter:_0x024
 
-mirror: https://mirror.xyz/1x024.eth/
+<p align="center">心有山海，静而不争</p>
 
-如果喜欢我，那就donation我 你的支持将给予我无限分享下去的动力
-```
 
-```
-0x14bCa363445462082101164Eff599F83fbBEbab1 
-```
+
+<p align="center">There are mountains and seas in the heart 
+
+<p align="center">quiet but without contention 
+
+
+<p align="center">如果喜欢我，您的支持将给予我无限分享下去的动力
+
+<p align="center"><img src="https://img.shields.io/badge/website-0x024.com-lightgrey" alt="" /></p></p>
+
+<p align="center"><img src="https://img.shields.io/badge/github-github.com/0x024-lightgrey" alt="" /></p></p>
+
+
+<p align="center"><img src="https://img.shields.io/badge/mirror-https://mirror.xyz/1x024.eth-lightgrey" alt="" /></p></p>
+
+
+<p align="center"><img src="https://img.shields.io/badge/ERC--20-0x14bCa363445462082101164Eff599F83fbBEbab1-lightgrey" alt="" /></p></p>
+
+
 
 
 ## 0x01 项目背景

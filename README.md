@@ -17,10 +17,13 @@
 <p align="center">:cow: github | github.com/0x024</p>
 
 
-<p align="center">mirror | https://mirror.xyz/1x024.eth</p>
+<p align="center">:cat2: mirror | https://mirror.xyz/1x024.eth</p>
+
+<p align="center">:dog2: email | zw97073966@gmail.com</p>
 
 
-<p align="center">ERC-20 | 0x14bCa363445462082101164Eff599F83fbBEbab1</p></p>
+
+<p align="center">:rabbit2: ERC-20 | 0x14bCa363445462082101164Eff599F83fbBEbab1</p></p>
 
 
 

@@ -1,5 +1,5 @@
 
-<h1 align="center">&#x1f912; web3的兼职者&#x1f973;</h1>
+<h1 align="center">:octopus:  web3的兼职者:rooster: </h1>
 
 
 <p align="center">心有山海，静而不争</p>

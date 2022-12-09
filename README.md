@@ -17,6 +17,7 @@
 
 <p align="center">:cow: github | https://github.com/0x024</p>
 
+<p align="center">:parrot: twitter | https://twitter.com/_0x024</p>
 
 <p align="center">:cat2: mirror | https://mirror.xyz/1x024.eth</p>
 

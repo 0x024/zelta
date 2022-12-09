@@ -1,4 +1,4 @@
-<h1 align="center">:octopus:  web3的兼职者:rooster: </h1>
+<h1 align="center">:octopus:  web3兼职:rooster: </h1>
 <p align="center">========================================
 <p align="center">心有山海，静而不争</p>
 <p align="center">There are mountains and seas in the heart 
